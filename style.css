@@ -1,0 +1,923 @@
+/*
+=================
+GLOBAL STYLES
+===================
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Dosis";
+}
+
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: ; 1.5em
+}
+
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/*
+=============
+Hero Section
+=============
+*/
+
+
+.hero{
+	background: linear-gradient( to bottom right, #4caf5765, #2e7d32 );
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.menu{
+	width: 100%;
+	background: yellow;
+	height: 40px;
+}
+
+.menu ul{
+	text-align: center;
+}
+.menu li{
+	list-style: none;
+	display: inline;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 15px 0px 15px;
+}
+
+
+
+/* Services Section */
+.Services {
+  padding: 60px 20px;
+  background-color: #f3f9f4;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.Services h1 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-box {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-box h3 {
+  color: #388e3c;
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.Services-content {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.service-box i {
+  font-size: 500px;
+  color: #6dbf53;
+  margin-bottom: 5px;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #6dbf53; /* Matches your green/healthy theme */
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+
+/*
+=================
+GLOBAL STYLES
+===================
+*/
+.aboutus{
+	padding-top : 100px;
+	padding-bottom : 100px;
+	text-align: center;
+	background-image: url(bg.jpg);
+	color: white;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+}
+
+.aboutus-content{
+	width: 80%;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	margin-top: 30px;
+	font-size: 1.1em;
+
+}
+.about-btn{
+	background: rgba(0, 0, 0, 0.01);
+	padding: 30px, 35px,30px, 35px;
+	margin-top: 30px;
+	border: none;
+	outline: 2px solid yellow;
+	color: white;
+	cursor: pointer;
+
+}
+.about-btn:hover {
+  background-color: #6dbf53;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+
+
+
+/*
+=============
+Team Section
+=============
+*/
+
+
+
+
+.team{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color:hsl(0, 0%, 95%) ;
+	width: 100%;
+	text-align: center;
+}
+
+
+.team-wrapper{
+	width: 90%;
+	padding-top: 40px;
+	margin: auto;
+}
+
+.col-team {
+	width: 25%;
+	float: left;
+	padding: 10px 30px;
+	text-align: center; 
+}
+.col-team img {
+    width: 120px;       
+    height: 120px;      
+    object-fit: cover; 
+    border-radius: 50%; 
+    padding-bottom: 5px;
+
+}
+
+.tcol{
+	max-width: 200px;
+	max-height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.05) ;
+	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.05);
+	padding: 10px;
+
+}
+
+.team-wrapper::after{
+	clear: both;
+	content:"";
+	display: table;
+}
+
+/*
+=================
+Contact Main
+==================
+*/
+
+.contact{
+	background-color: hsl(0, 0%, 95%);
+	width: 100% ;
+}
+
+.cta{
+	background-color: yellow;
+	width: 100%;
+	padding: 20px 3px 20px 3px ;
+	text-align: center;
+	height: 100px;
+}
+
+.cta-col{
+	width: 33.33% ;
+	float: left;
+}
+
+.cta-col h3 {
+	display: inline;
+}
+
+.cta:: after{
+	content: "";
+	clear: both;
+	display: table;
+
+}
+
+
+/*
+=================
+Contact Info
+===================
+*/
+
+.contactinfo{
+	width: 100% ;
+	padding: 30px 5px 30px 5px;
+	text-align: center;
+}
+
+.contactinfo::after{
+	content: "" ;
+	display: table;
+	clear: both;
+}
+
+.contactinfo-col1{
+	width: 35%;
+	float: left;
+	text-align: center;
+		padding: 30px 5px 30px 5px;
+}
+
+.contactinfo-col2{
+	width: 65%;
+	float: left;
+		padding: 30px 5px 30px 5px;
+		padding-right:10% ;
+}
+
+.contactinfo-col1, .contactinfo-col2 {
+  box-sizing: border-box;
+}
+  
+
+.social-icons{
+	padding: 15px;
+	border: 1px dotted black;
+	margin-top: 30px;
+}
+
+.fb{
+	background: #3a589b;
+	color: #fff;
+}
+
+.gp {
+  background: #db4a39;
+  color: #fff;
+}
+
+.ln {
+  background: #0077b5; 
+  color: #fff;
+}
+
+.x {
+  background: #000000;
+  color: #fff;
+}
+
+/*
+=================
+FORM Styles
+==================
+*/
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-bottom: 10px;
+}
+
+
+.form-col{
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	text-align: left;
+}
+
+.msg{
+	width: 100%;
+	height: 250px;
+	border: none;
+	outline: none;
+}
+
+.fname, .femail{
+	width: 100%;
+	height: 35px;
+	padding: 0px 5px 0px 5px;
+	background-color: #fff;
+	border: none;
+	outline: none ;
+
+}
+
+.sendbtn{
+	background: yellow;
+	border: none;
+	outline: 1px solid black;
+	padding: 10px 30px 10px 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.form-col-full {
+  width: 100%;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*
+=================
+Footer
+==================
+*/
+
+.footer {
+  background-color: #1b181f;
+  color: #eee;
+  width: 100%;
+  padding: 60px 40px 60px 40px; 
+}
+
+.footer h2{
+	color: white;
+	margin-bottom: 30px;
+}
+
+.footer-col{
+	width: 33.33%;
+	float: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*CSS MEDIA QUERIES*/
+
+
+
+@media screen and (max-width: 500px){
+	.services-col{
+		width: 100%;
+		padding-top: 100px;
+	}
+}
+
+
+.col-team{
+	width: 100%;
+	padding-top: 100px ;
+}
+
+.cta-col{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.contactinfo-col1{
+	width: 100%;
+
+}
+
+
+.contactinfo-col2{
+	width: 199%;
+	padding-right: 0px ;
+
+}
+
+.form-col{
+	width: 100px;
+}
+
+.footer-col{
+	width: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
+/*
+=================
+GLOBAL STYLES
+===================
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Dosis";
+}
+
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2em;
+}
+h3{
+	font-size: ; 1.5em
+}
+
+
+
+/*
+=============
+Hero Section
+=============
+*/
+
+
+.hero{
+	background: linear-gradient( to bottom right, #4caf5765, #2e7d32 );
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.menu{
+	width: 100%;
+	background: yellow;
+	height: 40px;
+}
+
+.menu ul{
+	text-align: center;
+}
+.menu li{
+	list-style: none;
+	display: inline;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 15px 0px 15px;
+}
+
+
+
+/* Services Section */
+.Services {
+  padding: 60px 20px;
+  background-color: #f3f9f4;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+.Services h1 {
+  font-size: 36px;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-box {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-box h3 {
+  color: #388e3c;
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+.Services-content {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.service-box i {
+  font-size: 500px;
+  color: #6dbf53;
+  margin-bottom: 5px;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #6dbf53; /* Matches your green/healthy theme */
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+
+/*
+=================
+GLOBAL STYLES
+===================
+*/
+.aboutus{
+	padding-top : 100px;
+	padding-bottom : 100px;
+	text-align: center;
+	background-image: url(bg.jpg);
+	color: white;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+}
+
+.aboutus-content{
+	width: 80%;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	margin-top: 30px;
+	font-size: 1.1em;
+
+}
+.about-btn{
+	background: rgba(0, 0, 0, 0.01);
+	padding: 30px, 35px,30px, 35px;
+	margin-top: 30px;
+	border: none;
+	outline: 2px solid yellow;
+	color: white;
+	cursor: pointer;
+
+}
+.about-btn:hover {
+  background-color: #6dbf53;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+
+
+
+/*
+=============
+Team Section
+=============
+*/
+
+
+
+
+.team{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color:hsl(0, 0%, 95%) ;
+	width: 100%;
+	text-align: center;
+}
+
+
+.team-wrapper{
+	width: 90%;
+	padding-top: 40px;
+	margin: auto;
+}
+
+.col-team {
+	width: 25%;
+	float: left;
+	padding: 10px 30px;
+	text-align: center; 
+}
+.col-team img {
+    width: 120px;       
+    height: 120px;      
+    object-fit: cover; 
+    border-radius: 50%; 
+    padding-bottom: 5px;
+
+}
+
+.tcol{
+	max-width: 200px;
+	max-height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.05) ;
+	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.05);
+	padding: 10px;
+
+}
+
+.team-wrapper::after{
+	clear: both;
+	content:"";
+	display: table;
+}
+
+/*
+=================
+Contact Main
+==================
+*/
+
+.contact{
+	background-color: hsl(0, 0%, 95%);
+	width: 100% ;
+}
+
+.cta{
+	background-color: yellow;
+	width: 90%;
+	padding: 0px 2px 1px 0px ;
+	text-align: center;
+	height: 100px;
+}
+
+.cta-col{
+	width: 33.33% ;
+	float: left;
+}
+
+.cta-col h3 {
+	display: inline;
+}
+
+.cta:: after{
+	content: "";
+	clear: both;
+	display: table;
+
+}
+
+
+/*
+=================
+Contact Info
+===================
+*/
+
+.contactinfo{
+	width: 100% ;
+	padding: 30px 5px 30px 5px;
+	text-align: center;
+}
+
+.contactinfo::after{
+	content: "" ;
+	display: table;
+	clear: both;
+}
+
+.contactinfo-col1{
+	width: 35%;
+	float: left;
+	text-align: center;
+		padding: 30px 5px 30px 5px;
+}
+
+.contactinfo-col2{
+	width: 65%;
+	float: left;
+		padding: 30px 5px 30px 5px;
+		padding-right:10% ;
+}
+
+.contactinfo-col1, .contactinfo-col2 {
+  box-sizing: border-box;
+}
+  
+
+.social-icons{
+	padding: 15px;
+	border: 1px dotted black;
+	margin-top: 30px;
+}
+
+.fb{
+	background: #3a589b;
+	color: #fff;
+}
+
+.gp {
+  background: #db4a39;
+  color: #fff;
+}
+
+.ln {
+  background: #0077b5; 
+  color: #fff;
+}
+
+.x {
+  background: #000000;
+  color: #fff;
+}
+
+/*
+=================
+FORM Styles
+==================
+*/
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-bottom: 10px;
+}
+
+
+.form-col{
+	float: left;
+	width: 48%;
+	margin-right: 2%;
+	text-align: left;
+}
+
+.msg{
+	width: 100%;
+	height: 250px;
+	border: none;
+	outline: none;
+}
+
+.fname, .femail{
+	width: 100%;
+	height: 35px;
+	padding: 0px 5px 0px 5px;
+	background-color: #fff;
+	border: none;
+	outline: none ;
+
+}
+
+.sendbtn{
+	background: yellow;
+	border: none;
+	outline: 1px solid black;
+	padding: 10px 30px 10px 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.form-col-full {
+  width: 100%;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*
+=================
+Footer
+==================
+*/
+
+.footer {
+  background-color: #1b181f;
+  color: #eee;
+  width: 100%;
+  padding: 60px 40px 60px 40px; 
+}
+
+.footer h2{
+	color: white;
+	margin-bottom: 30px;
+}
+
+.footer-col{
+	width: 33.33%;
+	float: left;
+	padding: 5px 10px 5px 10px;
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
