@@ -21,7 +21,7 @@ h2{
 	font-size: 2em;
 }
 h3{
-	font-size: ; 1.5em
+	font-size: 1.5em;
 }
 
 
@@ -473,7 +473,7 @@ Footer
 
 
 .contactinfo-col2{
-	width: 199%;
+	width: 100%;
 	padding-right: 0px ;
 
 }
@@ -537,7 +537,7 @@ Hero Section
 .menu{
 	width: 100%;
 	background: yellow;
-	height: 40px;
+	height: 50px;
 }
 
 .menu ul{
@@ -917,7 +917,131 @@ Footer
 
 
 
+/*CSS MEDIA QUERIES*/
 
 
 
+@media screen and (max-width: 768px) {
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .hero-text, .hero-image {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Navigation */
+  nav ul {
+    gap: 10px;
+    padding: 10px 0;
+    direction: inline;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+  }
+
+  /* Services section */
+  .col {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  /* About section */
+  .about-col1, .about-col2 {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .about-col2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Team section */
+
+  .team-wrapper {
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .col-team {
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .col-team img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  .tcol {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tcol h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+
+  .tcol p {
+    font-size: 14px;
+  }
+
+  /* CTA section */
+  .cta-col {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    background-color: yellow ;
+    border: box-sizing;
+  }
+
+  /* Contact section */
+  .contactinfo-col1, .contactinfo-col2 {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .contactinfo-col2 input,
+  .contactinfo-col2 textarea {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-col {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-col {
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+  }
+}
